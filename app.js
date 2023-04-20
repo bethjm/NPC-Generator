@@ -307,4 +307,12 @@ const handleClick = (questionId, chosenAnswer) => {
     }
     console.log(chosenAnswers)
     console.log(unansweredQuestions)
+
+    // disableQuestionBlock(questionId, chosenAnswer)
+    const lowestQuestionId = Math.min(...unansweredQuestions)
+    location.href = '#' + lowestQuestionId
+
+    if (!unansweredQuestions.length) {
+        // showAnswer()
+    }
 }
