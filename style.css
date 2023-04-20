@@ -41,7 +41,7 @@ p {
 .title-block {
     width: 600px;
     height: 210px;
-    background-color: rgb(102,96,221);
+    background-color: #43378B;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -67,6 +67,5 @@ p {
 }
 
 .answer-block img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
 }
