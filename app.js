@@ -263,7 +263,7 @@ const populateQuestions = () => {
         question.answers.forEach(answer  => {
             const answerBlock = document.createElement('div')
             answerBlock.classList.add('answer-block')
-            answerBlock.addEventListener('click', () => handleClick)
+            answerBlock.addEventListener('click', () => handleClick(question.id, answer.text))
             const answerImage = document.createElement('img')
             answerImage.setAttribute('src', answer.image)
             answerImage.setAttribute('alt', answer.alt)
@@ -278,7 +278,7 @@ const populateQuestions = () => {
             // sourceLink.textContent = 'Unsplash'
             // sourceLink.setAttribute('src', 'https://www.unsplash.com')
             // answerInfo.append(imageLink, ' to ', sourceLink)
-            // could go in answer.block (, answerInfo)
+            // could go in answerBlock (, answerInfo)
 
             answerBlock.append(answerImage, answerTitle)
         
@@ -292,5 +292,5 @@ const populateQuestions = () => {
 populateQuestions()
 
 const handleClick = (questionId, chosenAnswer) => {
-    console.log('click')
+    console.log(questionId, chosenAnswer)
 }
