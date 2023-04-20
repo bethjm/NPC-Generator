@@ -154,7 +154,7 @@ const questions = [
     },
     {
         id: 5,
-        image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjczMTc0fQ&fit=crop&h=230&w=320&crop=edges",
+        text: "What is their gender?",
         answers: [
         {   
         text: "male",
